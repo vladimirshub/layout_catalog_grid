@@ -4,9 +4,11 @@
   grid-auto-rows: 300px;
   place-content: center;
   grid-gap: 48px;
+  justify-content: center;
+  justify-items: center;
 
   @media (min-width: 488px) {
-    grid-template-columns: repeat(2, 200px);
+    grid-template-columns: 200px;
   }
 
   @media (min-width: 768px) {
@@ -19,8 +21,10 @@
 
   &__card {
     display: grid;
-    place-items: center;
-
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 300px;
     border: 1px solid #ccc;
     border-radius: 5px;
   }
